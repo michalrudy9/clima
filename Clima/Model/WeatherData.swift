@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct Weather: Codable {
+struct WeatherData: Codable {
     let name: String
     let main: Main
-    let descriptionWeather: [DescriptionWeather]
+    let weather: [Weather]
 }
 
 struct Main: Codable {
     let temp: Double
 }
 
-struct DescriptionWeather: Codable {
+struct Weather: Codable {
     let id: Int
     let description: String
 }
